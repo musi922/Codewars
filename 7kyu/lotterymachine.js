@@ -10,6 +10,7 @@ Its current version produces a sequence of random letters
  */
 
 
+
   function lottery(str){
     var numbers = [];
     var num = /\d/
