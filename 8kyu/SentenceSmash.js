@@ -10,7 +10,7 @@ function smash (words) {
 
  //simple way 
  function smash (words) {
-   
+    let result = words.join(" ")
    
     
     return result
