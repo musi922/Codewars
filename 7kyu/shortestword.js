@@ -19,14 +19,18 @@ function findShort(s){
   console.log( findShort("Pirlo boy"));
 
 
-  //simple way
-  function fiindShort(s){
-    return Math.min(...s.split(" ").map (s => s.length));
-}
+ let short = (s)=>{
+    let result = s.split(" ");
+    let shortest = result[0].length;
+    for(let i = 0;i<result.length;i++){
+        if(result[i].length<shortest){
+            shortest = result[i].length
+        }
+    }
+    return shortest
 
-console.log( fiindShort("Pirlo boy"));
 
-//
-
+ }
+ console.log( short("Pirlo boy"));
 
     
