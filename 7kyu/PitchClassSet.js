@@ -8,3 +8,7 @@ const binaryArrayToNumber = arr => {
 console.log(binaryArrayToNumber([1, 0, 0, 1]));
 
 
+//simpleway
+
+const binaryArrayToNumbers = arr => parseInt(arr.join(''),2)
+console.log(binaryArrayToNumbers([1, 0, 0, 1]));
