@@ -1,8 +1,9 @@
 function toNato(words) {
     return words
         .split('')
-        .filter(char => char !== ' ')
-        .map(char => {
-            return NATO[char.toUpperCase()] || char;
-        })
-        .join(' ')
+        .filter(function (char) { return char !== ' '; })
+        .map(function (char) {
+        return NATO[char.toUpperCase()] || char;
+    })
+        .join(' ');
+}
